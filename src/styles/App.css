@@ -1,0 +1,213 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-button {
+  margin: 1em;
+}
+
+.register-button {
+  margin: 1em;
+}
+
+.login-register {
+  width: 30vw;
+}
+
+/* Mobile only styling */
+@media only screen and (max-width: 500px) {
+  .login-register {
+    width: 100vw;
+  }
+
+  .hide-for-mobile {
+    display: none;
+  }
+
+  .app-title {
+    margin-top: 0em;
+  }
+
+  .vote-swipe {
+    width: 100vw;
+  }
+}
+
+/* Syling for desktop */
+@media (min-width: 426px) {
+  .login-register {
+    margin-top: 1.5em;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+    border-radius: 2px;
+    z-index: 1;
+  }
+
+  .vote-swipe {
+    width: 50vw;
+  }
+
+  .vote-screen {
+    margin-top: 1.5em;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+    border-radius: 2px;
+    z-index: 1;
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Screen */
+.main-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1em;
+  height: 60vh;
+}
+
+.main-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  width: 50vw;
+}
+
+.timer-icon {
+  margin-bottom: 0.1em;
+}
+
+.timer-count {
+  margin: 0.25em;
+}
+
+.game-button {
+  margin: 1em;
+}
+
+.timer {
+  margin: 0.2em;
+}
+
+/* Nav Menu */
+.nav-menu {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a {
+  color: white;
+}
+
+/* Your Beer Screen */
+.your-beer-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+}
+
+.submit-confirm-message {
+  margin-left: 0.5em;
+  margin-right: 0.25em;
+}
+
+.your-beer-screen-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.your-beer-submit {
+  margin: 2em;
+}
+
+/* Vote Screen */
+.vote-header {
+  margin-bottom: 0em;
+}
+
+.vote-subheader {
+  margin: 0em;
+}
+
+.vote-preview-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 8em;
+}
+
+/* Account Screen */
+.account-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Beers List Screen */
+.beer-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.beers-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  word-wrap: break-word;
+}
