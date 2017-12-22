@@ -1,12 +1,6 @@
-# Bad Beer Tasting
-
-A React app used to host a bad beer tasting party.
-
-![Logo](https://s3.amazonaws.com/bad-beer-tasting/Trash+Medal.svg "Logo")
+# LMJJ Technique List
 
 ### This project is currently running at:
-
-#### badbeertasting.com
 
 ### Main packages/libraries used in this project:
 
@@ -17,7 +11,3 @@ A React app used to host a bad beer tasting party.
 | [Webpack](https://webpack.github.io/)                      | Development server and module bundler                           |
 | [React Router V4](https://reacttraining.com/react-router/) | Declarative router for React                                    |
 | [Firestore](https://firebase.google.com/docs/firestore/)   | Scaleable NoSQL cloud database                                  |
-
-### Agile Trello Project Board:
-
-https://trello.com/b/GMzNSUCA/bad-beer-tasting
