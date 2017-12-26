@@ -10,7 +10,7 @@ class AppBarNav extends Component {
   render() {
     return (
       <AppBar
-        title="Bad Beer Tasting"
+        title="Lawman Jiu Jitsu"
         iconElementLeft={
           <AppDrawer
             userAuthInfo={this.props.userAuthInfo}

@@ -33,7 +33,6 @@ class App extends Component {
               path="/main"
               component={MainScreenContainer}
             />
-            />
             <PrivateRouteContainer
               path="/account"
               component={AccountScreenContainer}
