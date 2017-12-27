@@ -17,7 +17,6 @@ import {
 import firebase from 'firebase';
 import db from '../startup/db_init';
 import { fetchBeerInfo } from './beer_info.A';
-import { fetchGameInfo } from './game_info.A';
 
 const fbRegister = ({ email, password }) => {
   return dispatch => {
@@ -35,8 +34,6 @@ const fbRegister = ({ email, password }) => {
           dispatch(fetchUserDbInfo(user));
           // Fetch Beers collection
           dispatch(fetchBeerInfo());
-          // Fetch Game Info collection
-          dispatch(fetchGameInfo());
           resolve(user);
         })
         .catch(error => {
@@ -91,8 +88,6 @@ const fbLogin = ({ email, password }) => {
           dispatch(fetchUserDbInfo(user));
           // Fetch beers collection
           dispatch(fetchBeerInfo());
-          // Fetch Game Info collection
-          dispatch(fetchGameInfo());
           // Set store variable loggedIn to true
           dispatch({ type: LOGIN_SUCCESS });
           resolve(user);
@@ -135,8 +130,6 @@ const fbLoginPersist = user => {
     dispatch(fetchUserDbInfo(user));
     // Fetch beers collection
     dispatch(fetchBeerInfo());
-    // Fetch Game Info collection
-    dispatch(fetchGameInfo());
     dispatch({ type: LOGIN_SUCCESS, payload: { user } });
   };
 };
